@@ -2,7 +2,7 @@
 /**
  * WordPress Zero Spam Plugin
  *
- * @package    WordPressZeroSpam
+ * @package    ZeroSpamUFAX24
  * @subpackage WordPress
  * @since      5.0.0
  * @author     Ben Marshall
@@ -10,8 +10,8 @@
  * @license    GPL-2.0-or-later
  *
  * @wordpress-plugin
- * Plugin Name:       WordPress Zero Spam
- * Plugin URI:        https://benmarshall.me/wordpress-zero-spam
+ * Plugin Name:       ZeroSpamUFAX24
+ * Plugin URI:        app_5419941c-199e-4d86-a777-a6d22b70199e
  * Description:       Tired of all the useless and bloated WordPress spam plugins? The WordPress Zero Spam plugin makes blocking spam a cinch. <strong>Just install, activate and say goodbye to spam.</strong>.
  * Version:           5.0.13
  * Requires at least: 5.2
@@ -55,7 +55,7 @@ function zerospam_load_plugin_textdomain() {
  */
 function zerospam_fail_php_version() {
 	/* translators: %s: PHP version */
-	$message      = sprintf( esc_html__( 'WordPress Zero Spam requires PHP version %s+, plugin is currently NOT RUNNING.', 'zerospam' ), '7.3' );
+	$message      = sprintf( esc_html__( 'ZeroSpamUFAX24 requires PHP version %s+, plugin is currently NOT RUNNING.', 'zerospam' ), '7.3' );
 	$html_message = sprintf( '<div class="error">%s</div>', wpautop( $message ) );
 	echo wp_kses_post( $html_message );
 }
@@ -65,7 +65,7 @@ function zerospam_fail_php_version() {
  */
 function zerospam_fail_wp_version() {
 	/* translators: %s: WordPress version */
-	$message      = sprintf( esc_html__( 'WordPress Zero Spam requires WordPress version %s+. Because you are using an earlier version, the plugin is currently NOT RUNNING.', 'zerospam' ), '5' );
+	$message      = sprintf( esc_html__( 'ZeroSpamUFAX24 requires WordPress version %s+. Because you are using an earlier version, the plugin is currently NOT RUNNING.', 'zerospam' ), '5' );
 	$html_message = sprintf( '<div class="error">%s</div>', wpautop( $message ) );
 	echo wp_kses_post( $html_message );
 }
